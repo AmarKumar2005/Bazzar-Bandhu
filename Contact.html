@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+        <a href="index.html"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- -------------------- contact Us -------------------- -->
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1753801684777!2d85.88840497526809!3d26.158417177104848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb818c851d579%3A0xd98f153a1fced19!2sChaiti%20Durga%20Mandir!5e0!3m2!1sen!2sin!4v1716624572550!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div><i class="fa-solid fa-house-user"></i>
+          <span>
+            <h5>XYZ Road, ABC Building</h5>
+            <p>Bangalore, Karnataka, INDIA</p>
+          </span>
+        </div>
+        <div><i class="fa-solid fa-phone"></i>
+          <span>
+            <h5>+91 8759253524</h5>
+            <p>Monday to Saturday, 10AM to 6PM</p>
+          </span>
+        </div>
+        <div><i class="fa-solid fa-envelope"></i>
+          <span>
+            <h5>capstoneproject54@iitp.ac.in</h5>
+            <p>Email Us your query</p>
+          </span>
+        </div>
+      </div>
+    <div class="contact-col">
+      <form action="https://formsubmit.co/amarkumar854466@email.com" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea rows="8" name="Message" name="Message" required ></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+      </form>
+    </div>
+        
+    </div>
+  </section>
+
+    <!-- ---- Footer ----- -->
+    <section class="Footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores <br> nihil eveniet, soluta inventore a cupiditate nam rem, non aspernatur corporis expedita in. Laborum.</p>
+      <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made <i class="fa-solid fa-heart"></i> by Amar kumar</i></p>
+    </section>
+
+    <!-- --- Javascript for toggle menu---- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
